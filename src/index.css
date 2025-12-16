@@ -1,13 +1,86 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.navbar-features {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-button {
+  padding: 8px 15px;
+  border: none;
+  background: #1f67fb4d;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #8e9fe9;
+}
+
+.hero-button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: none;
+  background: white;
+  font-size: 16px;  
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 10%;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
 }
